@@ -22,9 +22,9 @@ def split_csv(input_file, output_folder, max_rows_per_file):
             current_output_file.close()
 
 if __name__ == "__main__":
-    input_file = input("Enter the file Path to the large CSV: ")  # Replace with your input CSV file
-    output_folder = input("Enter the output folder for the smaller CSV ")  # Replace with the folder where you want to save the smaller CSV files
-    max_rows_per_file = int(input("How many rows do you want in each CSV? (headers will always be row 1) "))  # Number of rows per smaller file
+    input_file = input("Enter the file Path to the large CSV: ")
+    output_folder = input("Enter the output folder for the smaller CSV ")
+    max_rows_per_file = int(input("How many rows do you want in each CSV? (headers will always be row 1) "))
     
     if not os.path.exists(output_folder):
         os.mkdir(output_folder)
